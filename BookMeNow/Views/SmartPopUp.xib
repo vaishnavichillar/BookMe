@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SmartPopUp" customModule="BookMeNow" customModuleProvider="target">
+            <connections>
+                <outlet property="firstButton" destination="UWw-eG-3he" id="oF2-5C-nAk"/>
+                <outlet property="popupMessage" destination="y1y-0e-2YA" id="7eG-Zv-nrc"/>
+                <outlet property="popupTitle" destination="tH2-p0-IPo" id="gws-Dj-H7M"/>
+                <outlet property="secondButton" destination="Ppa-n0-0ha" id="Dis-eO-6D2"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="225"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Booking Information" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tH2-p0-IPo">
+                    <rect key="frame" x="15" y="20" width="368" height="24"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Patient Name :  " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y1y-0e-2YA">
+                    <rect key="frame" x="15" y="59" width="368" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="3gv-ft-nda">
+                    <rect key="frame" x="15" y="136" width="363" height="40"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UWw-eG-3he">
+                            <rect key="frame" x="0.0" y="0.0" width="174" height="40"/>
+                            <color key="backgroundColor" name="app_theme"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="xux-P2-KxM"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                            <color key="tintColor" name="app_theme"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="20"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ppa-n0-0ha">
+                            <rect key="frame" x="189" y="0.0" width="174" height="40"/>
+                            <color key="backgroundColor" name="app_theme"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="Lue-W5-5AR"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                            <color key="tintColor" name="app_theme"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="20"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="WDF-Cg-tzU"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemGray6Color"/>
+            <constraints>
+                <constraint firstItem="tH2-p0-IPo" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="Bfb-ze-2uc"/>
+                <constraint firstItem="tH2-p0-IPo" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="EM8-0u-Spv"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="3gv-ft-nda" secondAttribute="trailing" constant="15" id="FkZ-jU-whe"/>
+                <constraint firstItem="y1y-0e-2YA" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="Pbx-ed-CYE"/>
+                <constraint firstAttribute="trailing" secondItem="tH2-p0-IPo" secondAttribute="trailing" constant="10" id="czd-Hy-ea4"/>
+                <constraint firstItem="3gv-ft-nda" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="jcb-1v-JlM"/>
+                <constraint firstItem="y1y-0e-2YA" firstAttribute="top" secondItem="tH2-p0-IPo" secondAttribute="bottom" constant="15" id="kf3-gt-SQT"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="3gv-ft-nda" secondAttribute="bottom" constant="15" id="rrx-aI-Yl3"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="y1y-0e-2YA" secondAttribute="trailing" constant="10" id="vfI-Va-8tS"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="32.824427480916029" y="19.718309859154932"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="app_theme">
+            <color red="0.96899998188018799" green="0.40799999237060547" blue="0.024000000208616257" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
