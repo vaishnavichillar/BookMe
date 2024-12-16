@@ -59,3 +59,6 @@ class LoginViewModel {
         }
     }
 }
+
+
+//Login Model
